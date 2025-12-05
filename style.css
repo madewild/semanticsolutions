@@ -1,0 +1,42 @@
+/* ===== Style global du site Semantic Solutions ===== */
+
+/* Police par défaut (fallback si Tailwind ne charge pas) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover sur la navigation (au-dessus de Tailwind) */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Transition douce entre clair/sombre */
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Conteneur centré par défaut */
+main {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Fix footer to bottom when page is short */
+footer {
+  margin-top: auto;
+}
+
+/* Petites améliorations pour un look "corporate" */
+h1, h2, h3 {
+  letter-spacing: -0.5px;
+}
