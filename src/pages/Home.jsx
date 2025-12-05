@@ -7,7 +7,7 @@ export default function Home() {
       </p>
 
       <a
-        href="#/services"
+        href="/services"
         className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700"
       >
         Discover our services
