@@ -297,9 +297,10 @@ footer a {
     }
 }
 
-/* Smooth scroll */
+/* Smooth scroll with offset for sticky header */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 /* Orange link class - use when needed */
