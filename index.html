@@ -104,13 +104,20 @@
     <section id="contact">
         <h2>Get in Touch</h2>
         <p class="section-subtitle">Let's discuss how we can help transform your data... 
-            Reach out at <a href="mailto:info@semanticsolutions.eu" class="orange-link" target="_blank">info@semanticsolutions.eu</a>.</p>
+            Reach out at <a href="#" id="email-link" class="orange-link" target="_blank"></a>.</p>
         <p class="section-subtitle">Semantic Solutions SComm/CommV<br>
         Rue de la Haye Fourrée 4<br>
         7021 Havré<br>
         Belgium<br><br>
         VAT: BE 0693.861.289</p>
     </section>
+    <script>
+        const user = 'info';
+        const domain = 'semanticsolutions.eu';
+        const link = document.getElementById('email-link');
+        link.href = 'mailto:' + user + '@' + domain;
+        link.textContent = user + '@' + domain;
+    </script>
 
     <!-- Footer -->
     <footer>
