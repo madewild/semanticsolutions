@@ -301,3 +301,19 @@ footer a {
 html {
     scroll-behavior: smooth;
 }
+
+/* Orange link class - use when needed */
+.orange-link {
+    color: var(--primary-orange);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.orange-link:hover {
+    color: var(--light-orange);
+    text-decoration: underline;
+}
+
+.orange-link:visited {
+    color: var(--primary-orange);
+}
