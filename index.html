@@ -1,21 +1,137 @@
 <!DOCTYPE html>
-<html lang="fr" class="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semantic Solutions</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css" />
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-    };
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="semantic">semantic</span><span class="solutions">solutions</span><span class="dots">:</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<body class="bg-white dark:bg-gray-900 dark:text-white transition-colors">
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Unlock the Power of <span class="highlight">Knowledge Graphs</span></h1>
+        <p>Transform your data into actionable insights with semantic web technologies and intelligent data integration</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p class="section-subtitle">Specialized solutions for semantic web and data integration</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">🕸️</div>
+                <h3>Knowledge Graphs</h3>
+                <p>Design and implement sophisticated knowledge graphs that connect your data in meaningful ways, enabling advanced analytics and insights.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🔗</div>
+                <h3>Data Integration</h3>
+                <p>Seamlessly integrate heterogeneous data sources using semantic technologies, RDF, and SPARQL for unified data access.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🎯</div>
+                <h3>Ontology Development</h3>
+                <p>Create robust ontologies and vocabularies that accurately represent your domain knowledge and business logic.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">⚡</div>
+                <h3>Semantic Search</h3>
+                <p>Implement intelligent search solutions that understand context and meaning, delivering more relevant results.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">🤖</div>
+                <h3>AI & ML Integration</h3>
+                <p>Enhance your AI and machine learning models with structured semantic data for improved accuracy and explainability.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="icon">📊</div>
+                <h3>Data Analytics</h3>
+                <p>Leverage semantic technologies for advanced data analytics, visualization, and business intelligence solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="section-subtitle">Experts in semantic web technologies</p>
+        
+        <div class="about-content">
+            <div class="about-text">
+                <p>Semantic Solutions specializes in transforming complex data landscapes into structured, meaningful knowledge ecosystems. We leverage cutting-edge semantic web technologies to help organizations make better decisions.</p>
+                
+                <p>Our team of experts brings years of experience in knowledge graph development, ontology engineering, and data integration to deliver solutions that scale with your business.</p>
+                
+                <p>We work with organizations across industries to unlock the full potential of their data through semantic technologies, AI integration, and intelligent data management.</p>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Let's discuss how we can help transform your data</p>
+        
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Semantic Solutions. All rights reserved.</p>
+        <p>Email: <a href="mailto:info@semanticsolutions.eu">info@semanticsolutions.eu</a></p>
+    </footer>
 </body>
 </html>
